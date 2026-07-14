@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reyy Electrical Services</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container nav">
+        <div class="logo">
+            Reyy <span>Electrical Services</span>
+        </div>
+
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="tel:+254700000000" class="call-btn">
+            <i class="fa-solid fa-phone"></i>
+            Call Now
+        </a>
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Quality Electrical Solutions You Can Trust</h1>
+
+        <p>
+            Professional domestic, commercial and industrial
+            electrical installations, CCTV systems and solar solutions.
+        </p>
+
+        <a href="https://wa.me/254758500204"
+           class="quote-btn">
+           Request a Quote
+        </a>
+    </div>
+
+    <div class="hero-image">
+        <img id="heroimage" 
+        src="images/installation.jfif.jfif"
+             alt="Electrical installation work">
+    </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="services" id="services">
+
+    <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Professional electrical solutions for homes and businesses.</p>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <i class="fa-solid fa-house"></i>
+            <h3>Domestic Installation</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-building"></i>
+            <h3>Commercial Installation</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-industry"></i>
+            <h3>Industrial Installation</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-camera"></i>
+            <h3>CCTV Installation</h3>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-solar-panel"></i>
+            <h3>Solar Installation</h3>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+
+    <div class="section-title">
+        <h2>Recent Projects</h2>
+        <p>Examples of our completed installations.</p>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="images/before1.jpg" alt="">
+            <span>Before</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/solar.gif" alt="">
+            <span>After</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/gallery2.jpg" alt="">
+            <span>Completed Installation</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- TRUST -->
+<section class="trust">
+
+    <div class="trust-box">
+        <h2>Why Choose Reyy Electrical Services?</h2>
+
+        <ul>
+            <li>✓ Professional workmanship</li>
+            <li>✓ Reliable and timely service</li>
+            <li>✓ Quality materials</li>
+            <li>✓ Competitive pricing</li>
+            <li>✓ Customer satisfaction guaranteed</li>
+        </ul>
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        <i class="fa-solid fa-phone"></i>
+        +254 758500204
+    </p>
+
+    <p>
+        <i class="fa-solid fa-envelope"></i>
+        reinhardmukuzi@gmail.com
+    </p>
+
+    <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Serving Kenya, based in Uasingishu-Eldoret.
+    </p>
+
+    <p class="copyright">
+        © 2026 Reyy Electrical Services. 
+        By swiftTechnologies
+    </p>
+
+</footer>
+<script>
+    const heroimages = [
+        "images/solar.jfif.jfif",
+        "images/installation.jfif.jfif",
+        "images/cctv.jpg.jfif",
+    ];
+
+    let current = 0;
+
+    setInterval(() => {
+        current = (current + 1) % heroimages.length;
+        document.getElementById("heroimage").src =
+    heroimages[current];    
+    },4000);
+</script>
+
+</body>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    line-height:1.6;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    background:#111;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#ffb300;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.call-btn{
+    background:#ffb300;
+    color:black;
+    padding:12px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f7f7f7;
+}
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom:30px;
+
+}
+
+.quote-btn{
+    background:#13c603;
+    color: #111;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    animation: bounce 2s infinite;
+    transition: 0.3s;
+}
+
+.quote-btn:hover{
+    animation-play-state: paused;
+    transform: scale(1,05);
+}
+
+@keyframes bounce{
+    0%,20%,50%,80%,100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-12px);
+    }
+    60%{
+        transform: translateY(-6px);
+    }
+}
+
+.hero-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-image img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.65;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+/* SERVICES */
+
+.services{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.service-card{
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.service-card i{
+    font-size:40px;
+    color:#ffb300;
+    margin-bottom:20px;
+}
+
+/* GALLERY */
+
+.gallery{
+    background:#f7f7f7;
+    padding:80px 10%;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-item img{
+    width:100%;
+    border-radius:8px;
+}
+
+.gallery-item span{
+    display:block;
+    text-align:center;
+    margin-top:10px;
+}
+
+/* TRUST */
+
+.trust{
+    padding:80px 10%;
+}
+
+.trust-box{
+    background:#111;
+    color:white;
+    padding:50px;
+    border-radius:10px;
+}
+
+.trust-box h2{
+    margin-bottom:20px;
+}
+
+.trust-box li{
+    margin-bottom:15px;
+    list-style:none;
+}
+
+/* FOOTER */
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+.copyright{
+    margin-top:30px;
+    opacity:.7;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+</html>
